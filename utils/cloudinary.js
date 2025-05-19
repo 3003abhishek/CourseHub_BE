@@ -1,3 +1,5 @@
+const upload = require('./multer');
+
 const cloudinary = require('cloudinary').v2;
 
 cloudinary.config({
@@ -15,3 +17,5 @@ const uploadToCloudinary = async (fileBuffer, folder, resourceType = 'auto') => 
         stream.end(fileBuffer);
     });
 };
+
+module.exports = {uploadToCloudinary};

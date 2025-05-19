@@ -1,6 +1,6 @@
 const Course = require('../models/course.model');
 
-const uploadToCloudinary = require('../utils/cloudinary');
+const{uploadToCloudinary}  = require('../utils/cloudinary');
 
 const createCourse = async (req, res) => {
     try{
